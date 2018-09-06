@@ -6,8 +6,8 @@ const fs = require('fs');
 
 // every route middleware
 Router.get('*',(req,res,next)=>{
-	let jsFiles = fs.readdirSync(__dirname + '/../../public/js/');
-	let cssFiles = fs.readdirSync(__dirname + '/../../public/css/');
+	let jsFiles = fs.readdirSync(process.cwd() + '/public/js/');
+	let cssFiles = fs.readdirSync(process.cwd() + '/public/css/');
 	jsFiles = jsFiles.filter(file=>{
 		let patt = /.js$/gi;
 		return patt.test(file);
