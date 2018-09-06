@@ -36,6 +36,8 @@ Router.get('*', (req, res, next) => {
 
 Router.get('/', mainController.home);
 
+Router.get('/register', mainController.register);
+
 // post routes
 
 

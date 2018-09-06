@@ -1,1 +1,12 @@
 extends layout.pug
+
+block content
+	h1 LS
+	form.login(action='/login', method='post')
+		.inputwrapper
+			input(type='text', name='username', placeholder='username')
+		.inputwrapper
+			input(type='password', name='password', placeholder='password')
+		button(type='submit') sign in
+		| 	or 
+		a(href='/register') Sign Up

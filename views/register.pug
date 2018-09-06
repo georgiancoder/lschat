@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+	form.regform(action='/register', method='post')
+		.row
+			.inputwrapper.half
+				input(type='text', name='fname', placeholder='first name')
+			.inputwrapper.half
+				input(type='text', name='lname', placeholder='last name')
+			.inputwrapper
+				input(type='text', name='username', placeholder='username')
+			.inputwrapper
+				input(type='password', name='password', placeholder='password')
+			button(type='submit') Sign Up
+			|  or 
+			a(href='/') Sign In
