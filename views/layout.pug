@@ -1,0 +1,16 @@
+doctype
+html
+	head
+		title chat
+		if cssFiles
+			each css in cssFiles
+				link(rel="stylesheet" href='/css/' + css)
+	body
+		header
+		block content
+		footer
+		if jsFiles
+			each js in jsFiles
+				script(src='/js/' + js)
+
+		
