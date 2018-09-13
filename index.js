@@ -7,6 +7,8 @@ const publicRoutes = require('./app/routes/publicRoutes');
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 5001;
 
+mongoose.connect('mongodb://localhost/chat');
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));

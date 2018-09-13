@@ -1,6 +1,7 @@
 const express = require('express');
 const Router = express.Router();
 const mainController = require('../controllers/mainController');
+const usersController = require('../controllers/usersController');
 const fs = require('fs');
 
 
@@ -40,6 +41,7 @@ Router.get('/register', mainController.register);
 
 // post routes
 
+Router.post('/register',usersController.register);
 
 // put routs
 
