@@ -7,7 +7,7 @@ const publicRoutes = require('./app/routes/publicRoutes');
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 5001;
 
-mongoose.connect('mongodb://localhost/chat');
+mongoose.connect('mongodb://geocoder:jgdmlwzc123@ds149682.mlab.com:49682/lschat');
 
 
 app.use(express.static(path.join(__dirname, 'public')));
